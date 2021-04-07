@@ -1,0 +1,61 @@
+.promotions {
+
+    &__list {
+        margin: 0 0 63px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        position: relative;
+        width: 360px;
+        min-height: 260px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 30px;
+    }
+
+    &__item-big {
+        width: 1140px;
+    }
+    
+    &__img {
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        filter: brightness(0.6);
+        background-size: cover;
+    }
+    
+    &__box {
+        position: absolute;
+        z-index: 2;
+    }
+    
+    &__title {
+        font-family: Lato;
+        color: $white-white;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 19px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    &__text {
+        margin-top: 8px;
+        font-family: Lato;
+        color: $dark-pink-color;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 19px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+}

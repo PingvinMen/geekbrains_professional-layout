@@ -1,0 +1,133 @@
+.registration {
+
+    &__list {
+        justify-content: space-between;
+        margin-top: 31px;
+        display: flex;
+    }
+    &__item-registration { /*колонка регистрации*/
+        max-width: 360px;
+    }
+
+    &__block {
+        margin-top: 33px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__jender-block {
+        flex-direction: row;
+    }
+
+    &__registration-title {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: $black-color;
+    }
+
+    &__string {
+        padding: 14px 0px 14px 14px;
+        margin-top: 20px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: $black-color;
+        border-radius: 0px;
+        border: 1px solid $border-field-for-filling;
+    }
+
+    &__text {
+        margin-top: 15px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: $registration-text;
+    }
+
+    &__button {
+        display: block;
+        margin: 40px auto 96px;
+        padding: 15px 39px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        background-color: $dark-pink-color;
+        color: $white-white;
+        border-radius: 0px;
+        border: 1px solid $pink-for-button;
+    }
+    &__button-tick {
+        margin-left: 20px;
+        fill: $white-white;
+    }
+
+    &__item-info {
+        max-width: 650px;
+    }
+
+    &__info {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: $products-title;
+    }
+
+    &__subitem {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: $products-title;
+    }
+
+    &__subitem:before {
+        margin-right: 23px;
+        content: url('./img/tick.svg');
+    }
+
+    &__info-title {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: $products-title;
+        text-transform: uppercase;
+    }
+
+    &__info {
+        margin-top: 22px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: $products-title;
+    }
+
+    &__sublist {
+        margin-top: 21px;
+    }
+
+    &__subitem {
+        margin-top: 16px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: $products-title;
+    }
+
+}

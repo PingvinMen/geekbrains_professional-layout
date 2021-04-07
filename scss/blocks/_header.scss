@@ -1,0 +1,95 @@
+.header {
+    background-color: $black-color;
+    position: relative;
+
+    &__navigation {
+        display: none;
+        z-index: 1;
+        padding: 0 0 0 34px;
+        width: 232px;
+        height: 765px;
+        background-color: $white-white;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+    }
+
+    &__button-close-menu {
+        margin: 17px 17px 0 auto;
+    }
+
+    &__title {
+        margin: 9px 0 4px 0;
+        text-transform: uppercase;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        color: $products-title;
+    }
+
+    &__sub-title {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: $dark-pink-color;
+        text-transform: uppercase;
+    }
+
+    &__sub-navigation-link {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: $link-in-menu;
+    }
+
+    &__navigation-item {
+        margin-top: 20px;
+    }
+
+    &__sub-navigation-list {
+        margin-left: 21px;
+    }
+
+    &__sub-navigation-item {
+        margin: 11px 0;
+    }
+
+    &__contayner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 75px;
+    }
+
+    &__logo {
+        margin: 0 41px 0 0;
+    }
+
+    &__button {
+        background: transparent;
+        border: none;
+        margin: 0 33px 0 0;
+    }
+
+    .nav-icon{
+        fill: $not-activ-nav-icon;
+    }
+
+    &__link:hover .nav-icon,
+    &__link:focus .nav-icon,
+    &__button:hover .nav-icon,
+    &__button:focus .nav-icon {
+        fill: $button-pink;
+    }
+
+    &__link {
+        margin: 0 33px 0 0;
+    }
+
+}

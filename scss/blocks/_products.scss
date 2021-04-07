@@ -1,0 +1,137 @@
+.products{
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__top-title {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+        color: $black-color;
+    }
+
+    &__top-text {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: $text-silver;
+        margin-bottom: 48px;
+    }
+
+    &__item {
+        width: 360px;
+    }
+
+    &__description {
+        background-color: $gray-color;
+        padding: 25px 29px 20px 17px;
+    }
+
+    /*Надо было как то разместить изображение 2-го товара в блоке посередине*/
+    &__box-img {
+        display:flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        width: 360px;
+        height: 420px;
+        background-color: $background-behind-image-products;
+    }
+    /*конец импровизации*/
+
+    &__img {
+        /*filter: brightness(0.3) sepia(0.3);*/
+        display: block;
+        position: absolute;
+        z-index: 1;
+    }
+
+    &__title {
+        margin-bottom: 12px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 16px;
+        color: $products-title;
+        text-transform: uppercase;
+        text-align: left;
+    }
+
+    &__text {
+        margin-bottom: 18px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: $products-text;
+        text-align: left;
+    }
+
+    &__price {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: $dark-pink-color;
+    }
+
+    &__button {
+        display: none;
+        z-index: 2;    
+        padding: 8px 13px;
+        border-radius: 0px;
+        border: 1px solid  $white-white;
+        background-color: rgba(255, 255, 255, 0);
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: $white-white;
+    }
+
+    &__button-text {
+        margin-left: 11px;
+    }
+
+    &__button-all-products {
+        display: block;
+        margin: 48px auto 90px;
+        padding: 15px 39px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: $button-pink;
+        border-radius: 0px;
+        border: 1px solid $pink-for-button;
+    }
+
+    &__button-all-products:hover {
+        background-color: $dark-pink-color;
+        color: $white-white;
+    }
+
+    &__box-img:hover &__img {
+        filter: brightness(0.3) sepia(0.3);
+    }
+
+    &__box-img:hover &__button {
+        display: flex;
+        align-items: center;
+    }
+
+}
