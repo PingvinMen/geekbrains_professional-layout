@@ -36,7 +36,6 @@
         padding: 25px 29px 20px 17px;
     }
 
-    /*Надо было как то разместить изображение 2-го товара в блоке посередине*/
     &__box-img {
         display:flex;
         position: relative;
@@ -46,10 +45,8 @@
         height: 420px;
         background-color: $background-behind-image-products;
     }
-    /*конец импровизации*/
 
     &__img {
-        /*filter: brightness(0.3) sepia(0.3);*/
         display: block;
         position: absolute;
         z-index: 1;
@@ -100,6 +97,10 @@
         font-size: 14px;
         line-height: 17px;
         color: $white-white;
+    }
+
+    &__nav-icon{
+        fill: $white-white;
     }
 
     &__button-text {

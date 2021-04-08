@@ -18,7 +18,8 @@
     }
 
     &__item-big {
-        width: 1140px;
+        width: 100%;
+        height: auto;    
     }
     
     &__img {
@@ -28,6 +29,8 @@
         flex-direction: column;
         filter: brightness(0.6);
         background-size: cover;
+        width: 100%;
+        height: auto;
     }
     
     &__box {
