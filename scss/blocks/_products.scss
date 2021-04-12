@@ -1,9 +1,13 @@
 .products{
 
+    display: flex;
+    flex-direction: column;
+
     &__list {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        margin-bottom: 128px;
     }
 
     &__top-title {
@@ -133,6 +137,280 @@
     &__box-img:hover &__button {
         display: flex;
         align-items: center;
+    }
+
+    &__filter {
+        display: flex;
+    }
+
+    &__filter-card {
+        justify-content: center;
+    }
+
+    &__filter_category {
+        min-width: 360px;
+        padding: 13px 32px 16px 0px;
+        margin: 51px 0 48px 0;
+    }
+
+    &__filter_category:hover &__filter-title,
+    &__filter_others:hover &__other-title,
+    &__filter_size:hover &__other-title,
+    &__filter_category:hover &__icon-filter,
+    &__filter_others:hover &__icon-filter,
+    &__filter_size:hover &__icon-filter {
+        color: $activ-text-filter;
+        fill: $activ-text-filter;
+    }
+
+    &__filter_category:hover &__filter-list {
+        display: block;
+    }
+
+    &__filter_size {
+        padding: 13px 0 16px 0px;
+        margin: 51px 16px 48px 0;
+    }
+
+    &__size-item{
+        text-align: left;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: $link-in-menu;
+    }
+
+    &__size-item:hover{
+        color: $activ-text-filter;   
+    }
+
+    &__checkbox{
+        margin: 0;
+        height: 12px;
+        width: 12px;
+    }
+
+    &__filter_size:hover &__other-list {
+        display: block;
+    }
+
+    &__filter_others {
+        padding: 13px 0 16px 0px;
+        margin: 51px 16px 48px 0;
+    }
+
+    &__filter_others:hover &__other-list {
+        display: block;
+    }
+
+    &__filter-title{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: $products-title;
+        text-transform: uppercase;
+    }
+
+    &__other-title{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: $link-in-menu;
+        text-transform: uppercase;
+    }
+
+    &__icon-filter{
+        margin-left: 11px;
+        fill: $products-title;
+    }
+
+    &__filter-variant{
+        display: block;
+        margin: 24px 0px;
+        padding: 11px;
+        border-left: 5px solid $activ-text-filter;
+        border-bottom: 1px solid $quantity-box;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        color: $link-in-menu;
+    }
+
+    &__filter-sub-list{
+        padding-left: 16px;
+        margin-top: 11px;
+    }
+
+    &__filter-list{
+        display: none;
+        margin-top: -30px;
+        margin-left: -1px;
+        padding: 13px 16px 16px 17px;
+        background-color: $white-white;
+        position: absolute;
+        z-index: 2;
+        min-width: 360px;
+        box-shadow: 0px 0px 30px 4px rgba(0,0,0,0.2);
+    }
+
+    &__other-list{
+        display: none;
+        margin-top: 5px;
+        margin-left: -1px;
+        padding: 13px 16px 16px 17px;
+        background-color: $white-white;
+        position: absolute;
+        z-index: 2;
+        box-shadow: 0px 0px 30px 4px rgba(0,0,0,0.2);
+        text-transform: uppercase;
+    }
+
+    &__filter-button{
+        display: block;
+        padding-left: 16px;
+        background-color: $white-white;
+        border: 0px solid $white-white;
+    }
+
+    &__filter-sub-variant{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: $link-in-menu;
+    }
+
+    &__number-page {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px; 
+        /*color: #EF5B70;*/
+    }
+
+    &__pages{
+        display: flex;
+        margin: -51px auto 97px auto;
+    }
+
+    &__pages-list{
+        display: flex;
+        margin: 0 auto;
+        padding: 10px;
+        border: 1px solid $quantity-box;
+    }
+
+    &__number-page{
+        margin: 5px 10px;
+    }
+
+    &__number-page_link{
+        color:$quantity-box;
+    }
+
+    &__full-description{
+        border: 1px solid $quantity-box;
+        max-width: $smoll-desktop-width;
+        padding: 64px 292px;
+        text-align: center;
+        margin-bottom: 129px;
+    }
+
+    &__title-collection{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        color: $dark-pink-color;
+    }
+
+    &__hr-small-pink{
+        margin: 12px auto;
+        width: 63px;
+        height: 3px;
+        background-color: $activ-text-filter;
+        border: 0px solid $activ-text-filter;
+    }
+
+    &__card{
+        margin-top: -65px;
+        z-index: 2;
+        background-color: $white-white;
+    }
+
+    &__title-card{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: $sub-text-total;
+    }
+
+    &__text-card{
+        margin-top: 48px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: $products-text;
+    }
+
+    &__price-card{
+        margin-top: 32px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: $activ-text-filter;
+    }
+
+    &__price-card::before{
+        content: '$';
+    }
+
+    &__hr{
+        background-color: $quantity-box;
+        height: 1px;
+        border: 0px solid $quantity-box;
+        width: auto;
+        margin-top: 65px;
+    }
+
+    &__button-card{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: $button-pink;
+        border: 1px solid $button-pink;
+        background-color: $white-white;
+        margin: 0 auto;
+        align-items: center;
+        display: flex;
+        padding: 13px 56px;
+    }
+
+    &__card-icon{
+        fill: $button-pink;
     }
 
 }

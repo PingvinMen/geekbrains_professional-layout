@@ -4,9 +4,11 @@ $pink-color: #F1E4E6;
 $dark-pink-color: #F16D7F;
 $gray-color: #F8F8F8;
 
-$desktop-width: 1600px;
-$tablet-width: 768px;
-$mobile-width: 375px;
+$desktop-width: 1600px; /*стандартный монитор*/
+$tablet-width: 768px; /*планшет*/
+$mobile-width: 375px; /*телефон*/
+
+$smoll-desktop-width: 1140px; /*меньшый размер стандартный монитор*/
 
 /*переменные созданные мной*/
 $button-pink: #F26376;
@@ -27,3 +29,6 @@ $sub-text-total: #4A4A4A;
 $products-text-card: #575757;
 $block-account: #F5F3F3;
 $quantity-box: #EAEAEA;
+
+$activ-text-filter: #EF5B70;
+$background-slide:#F7F7F7;

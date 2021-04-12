@@ -4,7 +4,12 @@
     align-items: center;
     background-color: $background-bread-crumbs;
 
-    &_position{
+    &__contayner{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__position{
         font-family: Lato;
         font-style: normal;
         font-weight: normal;
@@ -14,4 +19,18 @@
         text-transform: uppercase;
     }
 
+    &__crumbs{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: $link-in-menu;
+        text-transform: uppercase;
+        margin: auto 0;
+    }
+
+    &__topical-crumbs{
+        color: $dark-pink-color;
+    }
 }

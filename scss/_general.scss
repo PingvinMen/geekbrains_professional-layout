@@ -7,8 +7,12 @@ body {
 }
 
 .contayner {
-    width: 71%;
-    margin: 0 auto;
+    width: 1140px;
+    margin: 0 auto; 
+
+    @media (max-width: $desktop-width) {
+        width: 96%;
+    }
 }
 
 .visually-hidden {
@@ -20,10 +24,4 @@ body {
     overflow: hidden;
     border: 0;
     clip: rect(0 0 0 0);
-}
-
-@media (max-width: $desktop-width) {
-    .contayner { 
-        width: 96%;
-    }
 }
