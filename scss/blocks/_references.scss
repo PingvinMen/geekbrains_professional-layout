@@ -1,0 +1,50 @@
+.references{
+    padding: 24px 0px;
+    background-color: $black-color;
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__sub-list{
+        display: flex;
+    }
+
+    &__text{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: $hidden-text;
+    }
+
+    &__link{
+        background-color: $white-white;
+        margin: 2px;
+        height: 32px;
+        width: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__link:hover,
+    &__link:focus{
+        background-color: $button-pink;
+    }
+
+    &__link:hover .footer-icon,
+    &__link:focus .footer-icon{
+        fill: $white-white;
+    }
+}

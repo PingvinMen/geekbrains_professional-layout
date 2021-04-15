@@ -1,0 +1,36 @@
+.bread-crumbs{
+    height: 148px;
+    display: flex;
+    align-items: center;
+    background-color: $background-bread-crumbs;
+
+    &__contayner{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__position{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 29px;
+        color: $dark-pink-color;
+        text-transform: uppercase;
+    }
+
+    &__crumbs{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: $link-in-menu;
+        text-transform: uppercase;
+        margin: auto 0;
+    }
+
+    &__topical-crumbs{
+        color: $dark-pink-color;
+    }
+}

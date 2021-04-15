@@ -1,0 +1,91 @@
+.subscription {
+    background-image: url(./../img/back-ground-photo.png);
+    background-size: cover;
+    margin: auto;
+    height: 448px;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        flex-direction: column;
+        width: 360px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 87px;
+    }
+
+    &__text {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: $black-color;
+    }
+
+    &__title {
+        font-family: Lato;
+        font-weight: 700;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 167.2%;
+        text-align: center;
+        color: $black-color;
+    }
+
+    &__sub-title {
+        display: block;
+        font-weight: 400;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    &__email-box {
+        width: 340px;
+        display: flex;
+        justify-content: space-between;
+        background-color: $background-email-box;
+        border-radius: 25px;
+        
+    }
+
+    &__email {
+        width: 220px;
+        padding: 17px 0 17px 22px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        align-items: center;
+        color: var($black-color);
+        opacity: 0.67;
+        background-color: $background-email-box;
+        border: 0;
+        border-radius: 25px 0px 0px 25px;
+    }
+
+    &__button {
+        padding: 0 22px;
+        height: 100%;
+        border: 0;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        align-items: center;
+        text-align: center;
+        background-color: $dark-pink-color;
+        color: $white-white;
+        border-radius: 0px 25px 25px 0px;
+    }
+
+}
