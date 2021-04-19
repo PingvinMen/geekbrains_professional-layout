@@ -8,6 +8,11 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+
+        @media (max-width: $tablet-width) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__item {
@@ -17,6 +22,10 @@
         align-items: center;
         justify-content: center;
         padding-top: 87px;
+
+        @media (max-width: $tablet-width) {
+            padding-top: 50px;
+        }
     }
 
     &__text {
@@ -38,6 +47,10 @@
         line-height: 167.2%;
         text-align: center;
         color: $black-color;
+
+        @media (max-width: $tablet-width) {
+            font-size: 18px;
+        }
     }
 
     &__sub-title {
@@ -48,7 +61,7 @@
     }
 
     &__email-box {
-        width: 340px;
+        width: auto;
         display: flex;
         justify-content: space-between;
         background-color: $background-email-box;
@@ -57,7 +70,7 @@
     }
 
     &__email {
-        width: 220px;
+        min-width: 220px;
         padding: 17px 0 17px 22px;
         font-family: Lato;
         font-style: normal;
@@ -65,7 +78,7 @@
         font-size: 14px;
         line-height: 17px;
         align-items: center;
-        color: var($black-color);
+        color: $black-color;
         opacity: 0.67;
         background-color: $background-email-box;
         border: 0;
@@ -74,7 +87,7 @@
 
     &__button {
         padding: 0 22px;
-        height: 100%;
+        height: auto;
         border: 0;
         font-family: Lato;
         font-style: normal;

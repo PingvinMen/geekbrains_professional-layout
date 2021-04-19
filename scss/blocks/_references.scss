@@ -6,6 +6,10 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+
+        @media (max-width: $mobile-width) {
+            flex-direction: column-reverse;
+        }
     }
 
     &__item{
@@ -13,6 +17,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        
+        @media (max-width: $mobile-width) {
+            margin-top: 40px;
+        }
     }
 
     &__sub-list{
