@@ -75,6 +75,10 @@
         background: transparent;
         border: none;
         margin: 0 33px 0 0;
+
+        @media (max-width: $mobile-width) {
+            margin: 0;
+        }
     }
 
     .nav-icon{
@@ -91,5 +95,40 @@
     &__link {
         margin: 0 33px 0 0;
     }
+
+    &__registration{
+        @media (max-width: $mobile-width) {
+            display: none;
+        }
+    }
+
+    &__cart{
+        margin: 0;
+        @media (max-width: $mobile-width) {
+            display: none;
+        }
+    }
+
+    &__list-repetitive{
+        display: none;
+        @media (max-width: $mobile-width) {
+            display: flex;
+        }
+    }
+    &__item-repetitive{
+        margin-right: 20px;
+    }
+
+    .repetitive-nav-icon{
+        fill: $black-color;
+    }
+
+    &__repetitive-link:hover .repetitive-nav-icon,
+    &__repetitive-link:focus .repetitive-nav-icon,
+    &__repetitive-button:hover .repetitive-nav-icon,
+    &__repetitive-button:focus .repetitive-nav-icon {
+        fill: $button-pink;
+    }
+
 
 }

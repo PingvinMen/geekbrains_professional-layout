@@ -45,7 +45,7 @@
         position: relative;
         justify-content: center;
         align-items: center;
-        width: 360px;
+        width: 100%;
         height: 420px;
         background-color: $background-behind-image-products;
     }
@@ -141,6 +141,18 @@
 
     &__filter {
         display: flex;
+        @media (max-width: $desktop-width) {
+            justify-content: space-between;
+        }
+    }
+
+    &__filter-box{
+        display: flex;
+        
+        @media (max-width: $mobile-width) {
+            justify-content: right;
+        }
+
     }
 
     &__filter-card {
@@ -151,6 +163,21 @@
         min-width: 360px;
         padding: 13px 32px 16px 0px;
         margin: 51px 0 48px 0;
+
+        .products__icon-filter{
+            margin-left: 0px;
+        }
+
+        @media (max-width: $desktop-width) {
+            min-width: auto;
+        }
+
+        @media (max-width: $mobile-width) {
+            .products__icon-filter{
+                height: 25px;
+                width: 37px;
+            }
+        }
     }
 
     &__filter_category:hover &__filter-title,
@@ -165,11 +192,6 @@
 
     &__filter_category:hover &__filter-list {
         display: block;
-    }
-
-    &__filter_size {
-        padding: 13px 0 16px 0px;
-        margin: 51px 16px 48px 0;
     }
 
     &__size-item{
@@ -196,9 +218,10 @@
         display: block;
     }
 
-    &__filter_others {
+    &__filter_others,
+    &__filter_size {
         padding: 13px 0 16px 0px;
-        margin: 51px 16px 48px 0;
+        margin: 51px 0 48px 23px;
     }
 
     &__filter_others:hover &__other-list {
@@ -223,11 +246,20 @@
         line-height: 17px;
         color: $link-in-menu;
         text-transform: uppercase;
+
+        @media (max-width: $mobile-width) {
+            font-size: 12px;
+            line-height: 14px;
+        }
     }
 
     &__icon-filter{
-        margin-left: 11px;
+        margin: auto auto auto 13px;
         fill: $products-title;
+
+        @media (max-width: $tablet-width) {
+            margin: auto auto auto 8px;
+        }
     }
 
     &__filter-variant{
@@ -258,14 +290,13 @@
         background-color: $white-white;
         position: absolute;
         z-index: 2;
-        min-width: 360px;
+        min-width: 300px;
         box-shadow: 0px 0px 30px 4px rgba(0,0,0,0.2);
     }
 
     &__other-list{
         display: none;
         margin-top: 5px;
-        margin-left: -1px;
         padding: 13px 16px 16px 17px;
         background-color: $white-white;
         position: absolute;
@@ -275,10 +306,18 @@
     }
 
     &__filter-button{
-        display: block;
+        display: flex;
         padding-left: 16px;
         background-color: $white-white;
         border: 0px solid $white-white;
+
+        @media (max-width: $mobile-width) {
+            padding-left: 0px;
+
+            .products__filter-title{
+                display: none;
+            }
+        }
     }
 
     &__filter-sub-variant{
@@ -322,12 +361,14 @@
     &__full-description{
         border: 1px solid $quantity-box;
         max-width: $smoll-desktop-width;
-        padding: 64px 292px;
+        padding: 64px 0;
         text-align: center;
         margin-bottom: 129px;
     }
 
     &__title-collection{
+        max-width: 555px;
+        margin: 0 auto;
         font-family: Lato;
         font-style: normal;
         font-weight: 300;
@@ -349,9 +390,15 @@
         margin-top: -65px;
         z-index: 2;
         background-color: $white-white;
+
+        @media (max-width: $tablet-width) {
+            margin-top: 0;
+        }
     }
 
     &__title-card{
+        margin: 0 auto;
+        max-width: 555px;
         font-family: Lato;
         font-style: normal;
         font-weight: 300;
@@ -362,7 +409,8 @@
     }
 
     &__text-card{
-        margin-top: 48px;
+        max-width: 555px;
+        margin: 48px auto 0 auto;
         font-family: Lato;
         font-style: normal;
         font-weight: 300;
@@ -373,7 +421,8 @@
     }
 
     &__price-card{
-        margin-top: 32px;
+        max-width: 555px;
+        margin: 32px auto 0 auto;;
         font-family: Lato;
         font-style: normal;
         font-weight: 300;

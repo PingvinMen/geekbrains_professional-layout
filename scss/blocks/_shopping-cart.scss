@@ -1,9 +1,27 @@
 .shopping-cart {
-    margin-top: 96px;
+    margin: 0 auto 0 auto;
 
     &__box {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 96px;
+        margin-bottom: 128px;
+
+        @media (max-width: $tablet-width) {
+            justify-content: space-evenly;
+            margin-top: 59px;
+        }
+
+        @media (max-width: $mobile-width) {
+            margin-top: 39px;
+            margin-bottom: 96px;
+        }
+    }
+
+    &__block{
+        display: flex;
+        flex-direction: column;
     }
 
     &__item {
@@ -12,14 +30,23 @@
         box-shadow: 20px 20px 30px 2px rgba(0,0,0,0.2);
     }
 
+    &__products-img{
+        height: max-content;
+        width: 30%;
+    }
+
     &__products-info {
-        width: 260px;
+        width: auto;
         padding: 22px 0 0 31px;
+
+        @media (max-width: $mobile-width) {
+            padding: 13px 0 0 17px;
+        }
     }
 
     &__list {
         margin-bottom: 72px;
-        min-width: 660px;
+        width: auto;
     }
 
     &__products-title {
@@ -30,6 +57,11 @@
         line-height: 29px;
         color: $black-color;
         text-transform: uppercase;
+
+        @media (max-width: $mobile-width) {
+            font-size: 16px;
+            line-height: 19px;
+        }
     }
 
     &__products-text{
@@ -39,6 +71,11 @@
         font-size: 22px;
         line-height: 26px;
         color: $products-text-card;
+
+        @media (max-width: $mobile-width) {
+            font-size: 14px;
+            line-height: 17px;
+        }
     }
 
     &__products-text-pink {
@@ -81,6 +118,12 @@
         text-transform: uppercase;
         padding: 15px 39px;
         width: fit-content;
+
+        @media (max-width: $mobile-width) {
+            font-size: 12px;
+            line-height: 14px;
+            padding: 15px 20px;
+        }
     }
 
     &__title {
@@ -95,12 +138,13 @@
     }
 
     &__fieldset {
+        width: 360px;
         display: flex;
         flex-direction: column;
     }
 
     &__string {
-        width: 360px;
+
         padding: 14px 0px 14px 14px;
         margin-top: 20px;
         font-family: Lato;
@@ -117,8 +161,7 @@
         margin-top: 24px;
     }
 
-    &__block-account{
-        margin-top: 58px;
+    &__account{
         padding: 39px 34px 0;
         background-color: $block-account;
     }
@@ -164,7 +207,11 @@
     }
 
     &__hr {
+        height: 1px;
+        background-color: $quantity-box;
         margin-top: 21px;
+        width: 100%;
+        border: 0px solid;
     }
 
     &__button-in-block {
@@ -181,4 +228,11 @@
         text-transform: uppercase;
         padding: 15px 39px;
     }
+
+    &__box-checkout{
+        margin-top: 58px;
+        display: flex;
+        flex-direction: column;
+    }
+
 }
