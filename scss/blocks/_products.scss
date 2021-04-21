@@ -4,21 +4,6 @@
     flex-direction: column;
 
     &__list {
-        /*
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, auto);
-        margin-bottom: 128px;
-
-        @media (max-width: $tablet-width) {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        @media (max-width: $mobile-width) {
-            grid-template-columns: repeat(1, 1fr);
-        }
-        */
-
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
@@ -352,7 +337,6 @@
         font-weight: 300;
         font-size: 16px;
         line-height: 19px; 
-        /*color: #EF5B70;*/
     }
 
     &__pages{
@@ -478,5 +462,4 @@
     &__card-icon{
         fill: $button-pink;
     }
-
 }
