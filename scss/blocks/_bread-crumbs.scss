@@ -43,7 +43,25 @@
         }
     }
 
-    &__topical-crumbs {
+    &__list{
+        display: flex;
+    }
+/*
+    &__item{
+        
+    }
+*/
+    &__item:after {
+        margin-left: 5px;
+        margin-right: 5px;
+        content: '/';
+    }
+
+    &__item:last-child:after {
+        content: '';
+    }
+
+    &__item:last-child a {
         color: $dark-pink-color;
     }
 }
